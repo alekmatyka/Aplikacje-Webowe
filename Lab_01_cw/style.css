@@ -1,0 +1,21 @@
+.author{
+    color: red;
+}
+tr,td{
+    border-style: solid;   
+    border-width: 2px;
+    border-collapse: collapse;   
+}
+table{
+    border-style: solid;   
+    border-width: 4px;
+    border-collapse: collapse; 
+}
+
+.kwadrat{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    /* float: left;   */
+    margin: 10px;
+}
