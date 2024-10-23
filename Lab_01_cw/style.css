@@ -19,3 +19,9 @@ table{
     /* float: left;   */
     margin: 10px;
 }
+
+.kontener{
+    display: flex;
+    width: 400px;
+    flex-wrap: wrap-reverse;
+}
