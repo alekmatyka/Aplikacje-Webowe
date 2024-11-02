@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'Futura';
+    src: url('fonts/futura-medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Futura", sans-serif;
+    margin: 0;
+    color: white;
+}
+
+.main-header{
+    background-color: rgb(57, 72, 74);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav{
+    padding: 3px;
+    background-color:rgb(162, 165, 167);
+    display: flex;
+}
+
+.nav{
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(57, 72, 74);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    height: 30px;
+    margin: 10px;
+    overflow: hidden;
+    padding-top: 9px;
+}
+.nav:hover{
+    color: rgb(57, 72, 74);
+    background-color: white;
+}
+
+main{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}
+
+.loreblock{
+    background-color: yellow;
+    display: flex;
+    height: auto;
+    width: 450px;
+    margin: 10px;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.loreblock header{
+    width: 50%;
+    text-align: center;
+    align-content: center;
+    height: 200px;
+}
+
+.loreblock img{
+    width:200px;
+    height: 200px;
+    
+}
+
+.loreblock article{
+    padding: 10px;
+    height: auto;
+    align-content: center;
+    /* overflow-y: scroll; */
+}
+
+.lore{
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+
+    margin:10%;
+    padding: 5%;
+}
