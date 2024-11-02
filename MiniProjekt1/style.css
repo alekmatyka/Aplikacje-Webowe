@@ -5,10 +5,12 @@
     font-style: normal;
 }
 
-body {
+html, body {
     font-family: "Futura", sans-serif;
     margin: 0;
     color: white;
+    height: 100%;
+
 }
 
 .main-header{
@@ -47,6 +49,8 @@ main{
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 40px;
+    flex:1;
+    
 }
 
 .loreblock{
@@ -85,8 +89,24 @@ main{
 .lore{
     width: 100%;
     height: auto;
-    background-color: aqua;
-
+    background-color: rgb(152, 156, 148);
+    text-align: center;
+    font-size: 15pt;
     margin:10%;
-    padding: 5%;
+    padding: 3%;
+}
+
+footer{
+    background-color: rgb(57, 72, 74);
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 5px;
+    
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
