@@ -106,3 +106,24 @@
     background-color: black;
     color:black;
 }
+
+.emperor{
+    background-color: rgb(216, 157, 27);
+}
+
+.astartes{
+    background-color: rgb(42, 73, 127);
+}
+
+.guard{
+    background-color: rgb(188, 187, 126);
+    color: black;
+}
+.abbadon{
+    background-color: black;
+    color: rgb(216, 157, 27);
+}
+
+.arhiman{
+    background-color: rgb(0, 112, 138);
+}

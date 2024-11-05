@@ -6,18 +6,23 @@
     <title>Legiony Astartes</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="colors.css">
+    <link rel="icon" href="assets/chibimechanicum.png" type="image/x-icon">
+
+    <script src="script_astartes.js" defer></script>
+    <script src="clock.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
 
     <header class="main-header">
         <h1>O warhammerze krótko i zwięźle</h1>
+        <div id="clock"></div>
     </header>
     <nav>
 
         <a class="nav" href="index.html">Home</a>
 
-        <a class="nav" href="">Rasy</a>
+        <a class="nav" href="frakcje.html">Frakcje</a>
 
         <a class="nav" href="">Legiony Astartes</a>
 
@@ -32,146 +37,166 @@
         <div class="loreblock caliban">
             <header><h1>I <br>MROCZNE ANIOŁY</h1></header>
             <img src="assets/darkangels1.webp">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
 
         <div class="loreblock nothere">
             <header><h1>II <br>???</h1></header>
             <img src="assets/no-image-icon-6.png">
-            <article>
+            <article class="legionlore">
                 404
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock fulgrim">
             <header><h1>III<br>DZIECI IMPERATORA</h1></header>
             <img src="assets/Emperorschildren.png">
-            <article>
+            <article class="legionlore" id="ECcontent">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock perturabo">
             <header><h1>IV<br>ŻELAŹNI WOJOWNICY</h1></header>
             <img src="assets/Ironwarriors.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
                 Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
                 Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
                 Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock khan">
             <header><h1>V<br>BIAŁE SZRAMY</h1></header>
             <img src="assets/WhiteScarssymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dnc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock fenris">
             <header><h1>VI<br>KOSMICZNE WILKI</h1></header>
             <img src="assets/Spacewolvesymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock dorn">
             <header><h1>VII<br>PIĘŚCI IMPERATORA</h1></header>
             <img src="assets/IFsymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock nostramo">
             <header><h1>VIII<br>WŁADCY NOCY</h1></header>
             <img src="assets/Nightlords.webp">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock baal">
             <header><h1>IX<br>KRWAWE ANIOŁY</h1></header>
             <img src="assets/Bloodangelsymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock ferrus">
             <header><h1>X<br>ŻELAZNE DŁONIE</h1></header>
             <img src="assets/IronHandssymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock scp">
             <header><h1>XI<br>[REDACTED]</h1></header>
             <img src="assets/Logo_of_the_SCP_Foundation.png">
-            <article>
+            <article class="legionlore">
                 [DATA EXPUNGED]
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock angron">
             <header><h1>XII<br>POŻERACZE ŚWIATÓW</h1></header>
             <img src="assets/WE_Icon.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock ultra">
             <header><h1>XIII<br>ULTRAMARINES</h1></header>
             <img src="assets/Ultramarinessymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock mortarion">
             <header><h1>XIV<br>GWARDIA ŚMIERCI</h1></header>
             <img src="assets/DG_Icon.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
-            </article>
+            </article >
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock magnus">
             <header><h1>XV<br>TYSIĄC SYNÓW</h1></header>
             <img src="assets/TS_icon.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock horus">
-            <header><h1>XVI<br>WILKI LUNY / SYNOWIE HORUSA</h1></header>
+            <header id="blegion"><h1>XVI<br>WILKI LUNY / SYNOWIE HORUSA</h1></header>
             <img src="assets/SOH_icon.webp">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock lorgar">
             <header><h1>XVII<br>GŁOSICIELE SŁOWA</h1></header>
             <img src="assets/WBSymbolPreHeresy.jpg">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock vulcan">
             <header><h1>XVIII<br>SALAMANDRY</h1></header>
             <img src="assets/Salamanderssymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock corvus">
             <header><h1>XIX<br>KRUCZA GWARDIA</h1></header>
             <img src="assets/RavenGuardsymbol.png">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         <div class="loreblock alpha">
             <header><h1>XX<br>LEGION ALFA</h1></header>
             <img src="assets/Alphalegion.webp">
-            <article>
+            <article class="legionlore">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel enim vulputate, accumsan enim id, maximus ipsum. Curabitur viverra magna sed urna ultrices ullamcorper. Vestibulum auctor euismod enim sit amet lobortis. Nam sit amet faucibus risus. Nam vulputate sollicitudin faucibus. Nulla fringilla dignissim mauris, et gravida tortor accumsan sed. Donec lacus augue, laoreet sit amet maximus vel, hendrerit eu nibh. Nullam molestie in ante sit amet gravida. Vestibulum id orci non dolor pellentesque condimentum. In facilisis euismod sapien ut ullamcorper. Nunc sed lacinia metus, vitae auctor nunc.
             </article>
+            <button class="button"> Po Herezji</button>
         </div>
         
 
