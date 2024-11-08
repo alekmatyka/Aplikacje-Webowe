@@ -119,6 +119,7 @@
     background-color: rgb(188, 187, 126);
     color: black;
 }
+
 .abbadon{
     background-color: black;
     color: rgb(216, 157, 27);
@@ -126,4 +127,36 @@
 
 .arhiman{
     background-color: rgb(0, 112, 138);
+}
+
+.sororitas{
+    background-color: rgb(219, 220, 198);
+    color: rgb(169, 49, 30);
+}
+
+.necron{
+    background-color: rgb(73,173,51);
+    color: black;
+}
+
+.ork{
+    background-color: rgb(0, 131, 43);
+
+}
+
+.eldar{
+    background-color: rgb(219, 209, 178);
+    color: black;
+}
+
+.deldar{
+    background-color: rgb(136, 105, 174);
+}
+
+.tau{
+    background-color: rgb(44, 155, 204);
+}
+
+.tyranid{
+    background-color: rgb(118, 88, 165);
 }

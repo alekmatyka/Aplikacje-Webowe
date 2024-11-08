@@ -8,12 +8,13 @@
     <link rel="stylesheet" href="colors.css">
     <link rel="icon" href="assets/chibimechanicum.png" type="image/x-icon">
     <script src="clock.js" defer></script>
+    <script src="formscript.js" defer></script>
 
 </head>
 <body>
     <div class="wrapper">
     <header class="main-header">
-        <h1>O warhammerze krótko i zwięźle</h1>
+        <h1>O warhammerze pół żartem, pół serio</h1>
         <div id="clock"></div>
     </header>
     <nav>
@@ -24,7 +25,7 @@
 
         <a class="nav" href="astartes.html">Legiony Astartes</a>
 
-        <a class="nav" href="">Galeria</a>
+        <a class="nav" href="galeria.html">Galeria</a>
 
         <a class="nav" href="kontakt.html">Kontakt</a>
 
@@ -32,22 +33,29 @@
     
 
     <main>
-        <form class="lore">
-            <label for="email">Email:</label>
-            <input id="email" type="email" placeholder="inkwizycja@holy-terra.gov">
+        <form class="form">
+            <div class="form-header">
+                <div class="emaildiv">
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" placeholder="inkwizycja@holy-terra.gov" name="email">
+                </div>
 
-            <label for="temat">Temat wiadomości:</label>
-            <select name="tematy" id="temat">
-                <option value="prayer">Modlitwa do Boga-Imperatora</option>
-                <option value="complaint">Zażalenie</option>
-                <option value="heresy">Zgłoszenie herezji</option>
-            </select>
-            <textarea rows="4" cols="50" placeholder="hejooo...">
+                <div class="selectdiv">
+                    <label for="temat">Temat wiadomości:</label>
+                    <select name="tematy" id="temat">
+                        <option value="prayer">Modlitwa do Boga-Imperatora</option>
+                        <option value="complaint">Zażalenie</option>
+                        <option value="heresy">Zgłoszenie herezji</option>
+                    </select>
+                </div>
+            </div>
 
-            </textarea>
-            <input type="submit" value="Wyślij">     
 
+            <textarea rows="4" id="textarea"></textarea>
 
+            <div class="form-message"></div>
+
+            <input type="submit" value="Wyślij" class="submit">     
         </form>
 
 
