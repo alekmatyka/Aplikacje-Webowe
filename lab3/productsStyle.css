@@ -1,0 +1,9 @@
+.productImage{
+    height: 100px;
+
+}
+
+#table{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
