@@ -1,0 +1,31 @@
+admin: {
+    "id": 1,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoxLCJlbWFpbCI6ImFkbWluQGFkbWluLmFkbWluIiwiaWF0IjoxNzMzMzQ3MDI0fQ.LFmJgw6TEUD0-BvqVdTsboMi1y-7j3Ba_kRCeH9LSn4"
+}
+
+{
+    "email":"klient1@bookstore.bookstore",
+    "password": "1234"
+}
+{
+    "id": 2,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoyLCJlbWFpbCI6ImtsaWVudDFAYm9va3N0b3JlLmJvb2tzdG9yZSIsImlhdCI6MTczMzM0NzEyNH0.bQHWPrCs5xQV9_pXXonwPJJiBEV7W40ELk8L_oOd_Q4"
+}
+
+{
+    "email":"warol@kojtyla.papaj",
+    "password": "jp2137"
+}
+{
+    "id": 3,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjozLCJlbWFpbCI6Indhcm9sQGtvanR5bGEucGFwYWoiLCJpYXQiOjE3MzMzNDcxODB9.wpn4vnKlYN61Mmk_14MOWkahYqei5kd7_FvSG5ryl-0"
+}
+
+{
+    "email":"test@test1.test2",
+    "password": "test3"
+}
+{
+    "id": 4,
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjo0LCJlbWFpbCI6InRlc3RAdGVzdDEudGVzdDIiLCJpYXQiOjE3MzMzNDcyMzd9.L1QohvjJRlOAoO_kdCeQsujkit0Ntm1i9fduAK1nIQs"
+}
