@@ -15,7 +15,13 @@ const Odliczanie = () => {
                 setTime(oldTime=>(oldTime-1))
             },100)
             setButton("stop")
-        }      
+        } 
+        if(!isCountdown){
+            setButton("start")
+            if(time==0){
+                setButton("odliczanie zakonczone")
+            }
+        }  
         return () => {
             if (interval) clearInterval(interval);
         };
@@ -26,8 +32,8 @@ const Odliczanie = () => {
     useEffect(()=>{
         if(time==0){
             setDisabled(true)
-            setButton("odliczanie zakonczone")
             setCountdown(false)
+            setButton("odliczanie zakonczone")
         }        
     },[time]
     )
