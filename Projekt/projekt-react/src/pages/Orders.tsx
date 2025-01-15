@@ -98,6 +98,11 @@ const Orders = () => {
             console.error('Error:', error);
         })
     }
+
+    function roundToDecimal(value, decimals) {
+        const factor = Math.pow(10, decimals);
+        return Math.round(value * factor) / factor;
+    }
     
     return (
         <div className='home-wrapper'>
@@ -110,7 +115,7 @@ const Orders = () => {
                         <div className='summary-header'>
                             <h1>Zamowienie #{order.order}</h1>
                             <h2>
-                            Suma: {order.sum}$
+                            Suma: {roundToDecimal(order.sum,2)}$
                             </h2>
                             <h2>{dayjs(order.date).format('YYYY-MM-DD HH:mm:ss')}</h2>
                             <button className='order-button' onClick={()=>{deleteOrder(order.order)}}>Usuń zamówienie</button>
