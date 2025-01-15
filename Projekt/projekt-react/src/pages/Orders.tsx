@@ -3,6 +3,7 @@ import { useFetcher, useNavigate } from 'react-router-dom';
 import ProductListElement from '../components/ProductListElement';
 import { Accordion } from 'react-bootstrap';
 import BasicExample from '../components/BasicExample';
+import dayjs from 'dayjs';
 
 const Orders = () => {
     const [user,setUser] = useState({})
@@ -111,6 +112,7 @@ const Orders = () => {
                             <h2>
                             Suma: {order.sum}$
                             </h2>
+                            <h2>{dayjs(order.date).format('YYYY-MM-DD HH:mm:ss')}</h2>
                             <button className='order-button' onClick={()=>{deleteOrder(order.order)}}>Usuń zamówienie</button>
                         </div>
                         <div className='summary-items'>

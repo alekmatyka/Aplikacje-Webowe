@@ -243,9 +243,10 @@ app.get('/api/order',authenticate, async (req, res)=>{
     try{
         const userID=req.user.user
         const orders = await Order.findAll({where:{userID:userID}})
+        console.log(orders)
         const orderdetails = orders.map(async (order)=>{
             const details = await OrderDetail.findAll({where:{orderid:order.orderid}})
-            
+            console.log(order.createdAt)
             const newdetails=details.map(async (detail)=>{
                 return fetch(`https://fakestoreapi.com/products/${detail.productid}`)
                 .then((resp)=>resp.json())
@@ -269,6 +270,7 @@ app.get('/api/order',authenticate, async (req, res)=>{
             return({
                 sum:newresults.reduce((a,b)=>a+b.total,0),
                 order:order.orderid,
+                date:order.createdAt,
                 details:newresults
             })
         })
@@ -281,6 +283,7 @@ app.get('/api/order',authenticate, async (req, res)=>{
     res.status(400).json({ error: error.message });
     }
 })
+
 
 //usuniecie zamowienia
 app.delete('/api/order/:id',authenticate, async (req, res)=>{

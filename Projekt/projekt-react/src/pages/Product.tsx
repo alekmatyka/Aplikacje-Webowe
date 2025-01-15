@@ -193,6 +193,7 @@ const Product = () => {
                         <div className='product-display-name'>
                             <h2>{product.title}</h2>
                             <h3>{product.category}</h3>
+                            <p>{product.description}</p>
                         </div>
                     </div>
                     <div className='product-display-price'>
